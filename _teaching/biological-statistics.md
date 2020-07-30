@@ -8,8 +8,6 @@ date:
 location: "New York, NY, USA"
 ---
 
-Biological Statistics
-======
 
 **Course Level**: Graduate
 

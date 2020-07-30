@@ -8,8 +8,6 @@ date:
 location: "New York, NY, USA"
 ---
 
-Introductory Statistics
-======
 
 **Course Level**: Graduate
 
