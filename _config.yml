@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Joshua D. Salvi, M.D., Ph.D."
-  avatar           : 
+  avatar           : "profile.jpg"
   bio              : "Psychiatrist, Scientist"
   location         : "Boston, MA"
   employer         :
@@ -310,4 +310,4 @@ compress_html:
   ignore:
     envs: development
 
-# theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal
