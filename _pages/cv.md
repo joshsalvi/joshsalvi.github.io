@@ -5,6 +5,8 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /about/cv/
+  - /resume/
+  - /cv/
 ---
 
 # The Faculty of Medicine of Harvard University
