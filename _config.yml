@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Joshua D. Salvi, M.D., Ph.D."
-  avatar           : "profile.png"
+  avatar           : 
   bio              : "Psychiatrist, Scientist"
   location         : "Boston, MA"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/sites/myncbi/1ZkyS7l_a7ck8/bibliography/51334669/public/?sort=date&direction=ascending"
   googlescholar    : "https://scholar.google.com/citations?user=kzekVSgAAAAJ&hl=en"
-  email            :
+  email            : "jsalvi@mgh.harvard.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -310,4 +310,4 @@ compress_html:
   ignore:
     envs: development
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal

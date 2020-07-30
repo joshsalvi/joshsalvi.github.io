@@ -5,8 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-# Publications
-
 ### Links
 * [Google Scholar](https://scholar.google.com/citations?user=kzekVSgAAAAJ&hl=en)
 * [PubMed Bibliography](https://www.ncbi.nlm.nih.gov/sites/myncbi/1ZkyS7l_a7ck8/bibliography/51334669/public/?sort=date&direction=ascending)
