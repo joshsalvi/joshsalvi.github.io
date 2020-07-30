@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 ### About
-I am a resident in the Research Concentration Program as part of the MGH/McLean Adult Psychiatry Residency Program, arriving here after completing my tenure at the Weill Cornell / Rockefeller / Sloan-Kettering Tri-Institutional MD-PhD Program in New York City. 
+I am a resident in the Physician-Scientist Training Program (PSTP) in Psychiatry as part of the MGH/McLean Adult Psychiatry Residency Program, arriving here after completing my tenure at the Weill Cornell / Rockefeller / Sloan-Kettering Tri-Institutional MD-PhD Program in New York City. 
 
 My background is in neuroscience, biophysics, and dynamical systems. During my graduate training in the laboratory of Jim Hudspeth at The Rockefeller University, I employed a combination of micromechanical, electrophysiological, and computational techniques to find that sensory hair bundles are controlled not simply by their genetics, but by their mechanical microenvironment. I developed a system called a mechanical-load clamp, analogous to a dynamic clamp in electrophysiology, that permits an experimenter to control the various mechanical loads imparted onto hair bundles. Using this system, we found that these mechanical changes control how a hair bundle responds to perturbations and discovered an evolutionary role imparted by the cell’s mechanical niche. I went on to complete a Postdoctoral Fellowship at The Rockefeller University, followed by a Grass Fellowship in Neuroscience at the Marine Biological Laboratory in Woods Hole, MA. Here I continued my efforts in the field of sensory neuroscience.
 
@@ -19,5 +19,5 @@ As a resident and beyond, I wish to apply my background in dynamical systems and
 
 My long-term goals can be summarized in the following specific aims:
 
-Reassess nosology of psychiatric illness through the use of genetics and computational modeling of human behavior with fine temporal resolution.
-Determine how manipulations of genes putatively implicated in psychiatric disease affects both brain functioning and behavioral dynamics in animal models.
+* **Reassess nosology of psychiatric illness** through the use of genetics and computational modeling of human behavior with fine temporal resolution.
+* Determine how **manipulations of genes** putatively implicated in psychiatric disease affects both brain functioning and behavioral dynamics in animal models.
