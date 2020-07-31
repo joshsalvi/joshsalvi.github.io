@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate Course"
 permalink: /teaching/introductory-statistics
 venue: "The Rockefeller University"
-date: 
+date: "2015"
 location: "New York, NY, USA"
 ---
 
