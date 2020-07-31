@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -10,6 +10,8 @@ redirect_from:
 # The Faculty of Medicine of Harvard University
 
 # Curriculum Vitae
+
+[PDF of Currivulum Vitae](/files/CV.pdf)
 
 |   |   |
 | --- | --- |
@@ -39,7 +41,7 @@ redirect_from:
 
 
 
-### Clinical Training
+## Clinical Training
 
 | Month/Year(s) | Position Title | Department | Institution |
 | --- | --- | --- | --- |
@@ -47,7 +49,7 @@ redirect_from:
 | 2018 – | Resident Physician | Department of Psychiatry | Massachusetts General Hospital and McLean Hospital |
 
 
-### Other Professional Positions
+## Other Professional Positions
 
 | Year(s) | Position Title | Program | Institution |
 | --- | --- | --- | --- |
@@ -55,7 +57,7 @@ redirect_from:
 | 2014 – | Co-Founder, Partner, and Curator of Clinical Imaging | Neurodome |
 
 
-### Major Administrative Leadership Positions
+## Major Administrative Leadership Positions
 
 **Local**
 
@@ -73,7 +75,7 @@ redirect_from:
 
 
 
-### Committee Service
+## Committee Service
 
 **Local**
 
@@ -84,7 +86,7 @@ redirect_from:
 
 
 
-### Professional Societies
+## Professional Societies
 
 | Year(s) | Society Name | Title of Role(s) |
 | --- | --- | --- |
@@ -96,7 +98,7 @@ redirect_from:
 
 
 
-### Editorial Activities
+## Editorial Activities
 
 | Ad hoc Reviewer |
 | --- |
@@ -104,7 +106,7 @@ redirect_from:
 
 
 
-### Honors and Prizes
+## Honors and Prizes
 
 | Year | Name of Honor/Prize | Awarding Organization | Achievement for which awarded (if unclear from award title) |
 | --- | --- | --- | --- |
@@ -118,7 +120,9 @@ redirect_from:
 | 2007, 2008 | Evan Pugh Scholar | The Pennsylvania State University | Placement in the upper 0.5% of the Junior and Senior classes |
 
 
-### Report of Funded and Unfunded Projects
+
+
+## Report of Funded and Unfunded Projects
 
 
 **Past**
@@ -137,7 +141,8 @@ redirect_from:
 | 2020 – | Deep phenotyping in obsessive-compulsive disorderInvestigator, PI: Justin Baker, MD, PhD | Investigator |
 
 
-### Report of Local Teaching and Training
+
+## Report of Local Teaching and Training
 
 **Teaching of Students in Courses:**
 
@@ -155,7 +160,8 @@ redirect_from:
 | 2015 – 2016 | Summer Undergraduate Research Fellowship (SURF) Program | Undergraduate students | The Rockefeller University |
 
 
-### Invited Presentations
+
+## Invited Presentations
 
 **Local Invited Presentations:**
 
@@ -172,7 +178,8 @@ redirect_from:
 | 2016 | _Kinocilia actively augment mechanosensation by the lateral-line system_ | Invited Research Presentation | Brain and Spine Institute, Institut du Cerveau et de la Moelle epinere, ICM | Paris, France |
 
 
-### Report of Clinical Activities and Innovations**
+
+## Report of Clinical Activities and Innovations**
 
 **Current Licensure and Certification:**
 
@@ -188,10 +195,10 @@ redirect_from:
 
 
 
-## Report of Scholarship
+# Report of Scholarship
 
 
-### Research Investigations
+## Research Investigations
 
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
@@ -212,7 +219,7 @@ redirect_from:
 
 
 
-### Other peer-reviewed scholarship
+## Other peer-reviewed scholarship
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
@@ -220,7 +227,7 @@ redirect_from:
 
 
 
-### Proceedings of meetings or other non-peer reviewed scholarship
+## Proceedings of meetings or other non-peer reviewed scholarship
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
@@ -230,14 +237,14 @@ redirect_from:
 
 
 
-### Reviews, chapters, monographs and editorials
+## Reviews, chapters, monographs and editorials
 
 * **Salvi J** (2019). "Psychiatric Assessment: Commonly Used Rating Scales"; In J.B. Taylor, S.R. Beach, and J. Puckett (Eds.), _Pocket Psychiatry, 1st Edition._ Philadelphia, PA: Lippincott Williams & Wilkins Company. 
 * **Salvi J** (2019). "Somatic Therapies: Electro"; In J.B. Taylor, S.R. Beach, and J. Puckett (Eds.), _Pocket Psychiatry, 1st Edition._ Philadelphia, PA: Lippincott Williams & Wilkins Company.
 
 
 
-### Doctoral Thesis
+## Doctoral Thesis
 
 | Year | Author | Thesis Title | Reference/Source |
 | --- | --- | --- | --- |
@@ -246,7 +253,7 @@ redirect_from:
 
 
 
-### Abstracts, Poster Presentations and Exhibits Presented at Professional Meetings
+## Abstracts, Poster Presentations and Exhibits Presented at Professional Meetings
 
 [✧] **First/Presenting author**, [✶] **Senior/Corresponding author**
 [⁜] **Podium presentation**
