@@ -7,8 +7,6 @@ redirect_from:
   - /resume/
 ---
 
-# The Faculty of Medicine of Harvard University
-
 # Curriculum Vitae
 
 [PDF of Currivulum Vitae](/files/CV.pdf)
