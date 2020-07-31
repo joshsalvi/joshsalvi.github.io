@@ -4,7 +4,7 @@ collection: teaching
 type: "Graduate Course"
 permalink: /teaching/biological-statistics
 venue: "The Rockefeller University, Weill Cornell Medical College"
-date: 2016
+date: 2016-01-01
 location: "New York, NY, USA"
 ---
 
