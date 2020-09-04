@@ -7,6 +7,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
+### Links
+* [Scholars at Harvard](https://scholar.harvard.edu/jsalvi)
+* [Harvard Catalyst](https://connects.catalyst.harvard.edu/Profiles/display/Person/172724)
+* [Google Scholar](https://scholar.google.com/citations?user=kzekVSgAAAAJ&hl=en)
+* [PubMed Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/joshua.salvi.1/bibliography/public/)
 
 ### About
 I am a resident in the Physician-Scientist Training Program (PSTP) in Psychiatry as part of the MGH/McLean Adult Psychiatry Residency Program, arriving here after completing my tenure at the Weill Cornell / Rockefeller / Sloan-Kettering Tri-Institutional MD-PhD Program in New York City. 

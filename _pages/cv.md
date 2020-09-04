@@ -231,7 +231,7 @@ redirect_from:
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
-* [✶] McDowell MJ and **Salvi JD**. Casting Light from the Shadows: Coping and Defenses Amidst a Pandemic. J Clin Psychiatry. 2020 Jun; 81(4):20com13468. PMID 32558400.
+*  [✶] McDowell MD, **Salvi JD**. Casting Light From the Shadows: Coping and Defenses Amidst a Pandemic. J Clin Psychiatry. 2020 Jun 9 81(4):20com13468. PMID [32558400](https://pubmed.ncbi.nlm.nih.gov/32558400/). PMCID [PMC738540](http://www.ncbi.nlm.nih.gov/pmc/articles/pmc7385405/).
 
 
 

@@ -8,6 +8,8 @@ author_profile: true
 ### Links
 * [Google Scholar](https://scholar.google.com/citations?user=kzekVSgAAAAJ&hl=en)
 * [PubMed Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/joshua.salvi.1/bibliography/public/)
+* [Scholars at Harvard](https://scholar.harvard.edu/jsalvi)
+* [Harvard Catalyst](https://connects.catalyst.harvard.edu/Profiles/display/Person/172724)
 
 
 ### Research Investigations
