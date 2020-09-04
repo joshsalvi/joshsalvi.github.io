@@ -98,7 +98,7 @@ author:
   foursquare       :
   github           : "joshsalvi"
   google_plus      :
-  keybase          :
+  keybase          : "https://keybase.io/jsalvi"
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
@@ -115,6 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  scholar          : "https://scholar.harvard.edu/jsalvi"
 
 
 # Reading Files
