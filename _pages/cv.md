@@ -9,7 +9,7 @@ redirect_from:
 
 # Curriculum Vitae
 
-[PDF of Currivulum Vitae](/files/CV.pdf)
+[PDF of Curriculum Vitae](/files/CV.pdf)
 
 |   |   |
 | --- | --- |
@@ -17,17 +17,16 @@ redirect_from:
 | **Office Address:** | **15 Parkman Street, WACC 812, Boston, MA, 02114** |
 | **Work Phone:** | **(617) 724-6300 x111-133-0092**  |
 | **Work Email:** | [**jsalvi@mgh.harvard.edu**](mailto:jsalvi@mgh.harvard.edu) |
-| **Work Email:** | (617) 941-3730 |
-| **Place of Birth:** | Altoona, Pennsylvania, USA |
+| **Work Fax:** | (617) 941-3730 |
 
 
 ## Degrees
 
 | Years | Degrees | Honors | Fields of Study | Thesis advisor(s), if applicable | Institution |
 | --- | --- | --- | --- | --- | --- |
-| 2009 | **B.S.** | _with Honors, Summa cum laude, Student Marshal_ | Biomedical Engineering | Thesis Advisors: Peter J. Butler and Henry J. Donahue | The Pennsylvania State University |
-| 2015 | **Ph.D.** |  | Biophysics and Neuroscience | Thesis Advisor: James Hudspeth | The Rockefeller University |
-| 2018 | **M.D.** | _with Honors in Service_ | Medicine | | Weill Cornell Medical College |
+| 2009 | **B.S.** | _with Honors, Summa cum laude, Student Marshal_ | Biomedical Engineering | Thesis Advisors: [Peter J. Butler](https://sites.psu.edu/butler/home/), [Henry J. Donahue](https://egr.vcu.edu/directory/henrydonahue/) | The Pennsylvania State University |
+| 2015 | **Ph.D.** | - | Biophysics, Neuroscience | Thesis Advisor: [James Hudspeth](https://www.rockefeller.edu/our-scientists/heads-of-laboratories/1186-a-james-hudspeth/) | The Rockefeller University |
+| 2018 | **M.D.** | _with Honors in Service_ | Medicine | - | Weill Cornell Medical College |
 
 
 
@@ -45,6 +44,18 @@ redirect_from:
 | --- | --- | --- | --- |
 | 2018 – 2019 | Internship | Department of Medicine | Massachusetts General Hospital |
 | 2018 – | Resident Physician | Department of Psychiatry | Massachusetts General Hospital and McLean Hospital |
+
+
+## Research Positions
+| Year(s) | Position Title | Institution | Location | 
+| --- | --- | --- | --- |
+| 2018 – | Postdoctoral Researcher, Resident Physician | Physician-Scientist Training Program in Psychiatry | Massachusetts General Hospital and McLean Hospital, Harvard Medical School, Boston, MA |
+| 2017 – | Postdoctoral Researcher, Resident Physician | Laboratory for Functional Neuroimaging and Bioinformatics, Institute for Technology in Psychiatry | McLean Hospital, Belmont, MA |
+| 2016 | Grass Fellow | The Marine Biological Laboratory | Woods Hole, MA |
+| 2015 – 2016 | Postdoctoral Fellow | Howard Hughes Medical Institute and Laboratory of Sensory Neuroscience | The Rockefeller University, New York, NY |
+| 2011 – 2015 | Graduate Fellow | Laboratory of Sensory Neuroscience | The Rockefeller University, New York, NY |
+| 2006 – 2009 | Undergraduate Researcher | Cellular Mechanobiology Laboratory | The Pennsylvania State University, University Park, PA | 
+| 2006 – 2009 | Research Fellow | Biomaterials and Bionanotechnology Summer Institute | Milton S. Hershey Medical Center, The Pennsylvania State University, Hershey, PA |
 
 
 ## Other Professional Positions
