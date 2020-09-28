@@ -211,6 +211,9 @@ redirect_from:
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
+*  Ennis M, **Salvi JD**, and Baker JT. Deep phenotyping in a patient with treatment refractory obsessive compulsive disorder. In preparation. 
+*  [✧][✶] **Salvi JD**, Rauch SR, and Baker JT. Behavior as Physiology: How Dynamical-Systems Theory Could Help Psychiatry. American Journal of Psychiatry. Under Review.
+*  Olsen ST, Basu I, Bilge MT, Kanabar A, Boggess M, Rockhill AP, Gosai AK, Hahn E, Peled N, Ennis M, Shiff I, Fairbank-Haynes K, **Salvi JD**, Cusin C, Deckersbach T, Williams Z, Baker J, Dougherty DD, and Widge AS. Case report of dual-site neurostimulation and chronic recording of cortico-striatal circuitry in a patient with treatment refractory obsessive compulsive disorder. Frontiers in Human Neuroscience. 2020 Sep. doi: 10.3389/fnhum.2020.569973
 *  [✧] **Salvi J**. Calculated Decisions: Columbia-Suicide Severity Rating Scale (C-SSRS). Emerg Med Pract. 2019 May 1 21(5):CD3-4. PMID 31039299.
 *  [✧] **Salvi JD** , Iqbal M, Kotbi N, and Francois D. Successful use of electroconvulsive therapy in the setting of lattice degeneration of the retina. Primary Care Companion for CNS Disorders. 2018 Apr 5 20(2):17l02190. PMID 29659212.
 *   Milewski AR, O'Maoileidigh D, **Salvi JD** , and Hudspeth AJ. Homeostatic enhancement of sensory transduction. Proceedings of the National Academy of Sciences of the United States of America. 2017 Aug 15 114(33):E6794-E6803. doi: 10.1073/pnas.1706242114. PMID 28760949. PMCID 5565450.
