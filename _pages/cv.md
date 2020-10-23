@@ -47,6 +47,7 @@ redirect_from:
 
 
 ## Research Positions
+
 | Year(s) | Position Title | Institution | Location | 
 | --- | --- | --- | --- |
 | 2018 – | Postdoctoral Researcher, Resident Physician | Physician-Scientist Training Program in Psychiatry | Massachusetts General Hospital and McLean Hospital, Harvard Medical School, Boston, MA |
