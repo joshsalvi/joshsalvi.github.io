@@ -50,7 +50,7 @@ redirect_from:
 | Year(s) | Position Title | Institution | Location | 
 | --- | --- | --- | --- |
 | 2018 – | Postdoctoral Researcher, Resident Physician | Physician-Scientist Training Program in Psychiatry | Massachusetts General Hospital and McLean Hospital, Harvard Medical School, Boston, MA |
-| 2017 – | Postdoctoral Researcher, Resident Physician | Laboratory for Functional Neuroimaging and Bioinformatics, [Institute for Technology in Psychiatry](https://www.mcleanhospital.org/research/mclean-institute-technology-psychiatry) | McLean Hospital, Belmont, MA |
+| 2017 – | Postdoctoral Researcher, Resident Physician | Laboratory for Functional Neuroimaging and Bioinformatics | McLean Hospital, Belmont, MA |
 | 2016 | Grass Fellow | The Marine Biological Laboratory | Woods Hole, MA |
 | 2015 – 2016 | Postdoctoral Fellow | Howard Hughes Medical Institute and Laboratory of Sensory Neuroscience | The Rockefeller University, New York, NY |
 | 2011 – 2015 | Graduate Fellow | Laboratory of Sensory Neuroscience | The Rockefeller University, New York, NY |
