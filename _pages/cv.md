@@ -120,6 +120,7 @@ redirect_from:
 
 | Year | Name of Honor/Prize | Awarding Organization | Achievement for which awarded (if unclear from award title) |
 | --- | --- | --- | --- |
+| 2021 | The Pamela Sklar Psychiatric Genetics and Neuroscience Fellowship | Broad Institute | Research award |
 | 2020 | NIMH Ourstanding Resident Award (ORAP) | National Institute of Mental Health | Award for psychiatry residents with outstanding research and academic potential |
 | 2020 | APA Leadership Fellowship | American Psychiatric Association | Fellowship for leadership in psychiatry |
 | 2018 | The John Metcalf Polk Prize | Weill Cornell Medical College | Highest academic achievement in medical school |
@@ -134,6 +135,11 @@ redirect_from:
 
 ## Report of Funded and Unfunded Projects
 
+
+**Present**
+
+| Year(s) | Grant title | Funding Agency, Grant type and Grant number | Official role on project | Description of the major goals |
+| 2020 – | Genomics of Computationally Defined Phenotypes for Repetitive and Ritualistic Behaviors | Stanley Center for Psychiatric Research, Broad Institute | Fellow/Awardee | Major Goal: Apply an actigraphy-based segmentation approach to determine objective, quantifiable measures of repetitive and ritualistic behavioral phenotypes |
 
 **Past**
 
