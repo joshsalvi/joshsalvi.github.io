@@ -141,6 +141,7 @@ redirect_from:
 | Year(s) | Grant title | Funding Agency, Grant type and Grant number | Official role on project | Description of the major goals |
 | 2020 – | Genomics of Computationally Defined Phenotypes for Repetitive and Ritualistic Behaviors | Stanley Center for Psychiatric Research, Broad Institute | Fellow/Awardee | Major Goal: Apply an actigraphy-based segmentation approach to determine objective, quantifiable measures of repetitive and ritualistic behavioral phenotypes |
 
+
 **Past**
 
 | Year(s) | Grant title | Funding Agency, Grant type and Grant number | Official role on project | Description of the major goals |
@@ -219,7 +220,7 @@ redirect_from:
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
 *  Ennis M, **Salvi JD**, and Baker JT. Deep phenotyping in a patient with treatment refractory obsessive compulsive disorder. In preparation. 
-*  [✧][✶] **Salvi JD**, Rauch SR, and Baker JT. Behavior as Physiology: How Dynamical-Systems Theory Could Help Psychiatry. American Journal of Psychiatry. Under Review.
+*  [✧][✶] **Salvi JD**, Rauch SR, and Baker JT. Behavior as Physiology: How Dynamical-Systems Theory Could Help Psychiatry. American Journal of Psychiatry. 2021 Sep 13 179(2):791-792.
 *  Olsen ST, Basu I, Bilge MT, Kanabar A, Boggess M, Rockhill AP, Gosai AK, Hahn E, Peled N, Ennis M, Shiff I, Fairbank-Haynes K, **Salvi JD**, Cusin C, Deckersbach T, Williams Z, Baker J, Dougherty DD, and Widge AS. Case report of dual-site neurostimulation and chronic recording of cortico-striatal circuitry in a patient with treatment refractory obsessive compulsive disorder. Frontiers in Human Neuroscience. 2020 Sep. doi: 10.3389/fnhum.2020.569973
 *  [✧] **Salvi J**. Calculated Decisions: Columbia-Suicide Severity Rating Scale (C-SSRS). Emerg Med Pract. 2019 May 1 21(5):CD3-4. PMID 31039299.
 *  [✧] **Salvi JD** , Iqbal M, Kotbi N, and Francois D. Successful use of electroconvulsive therapy in the setting of lattice degeneration of the retina. Primary Care Companion for CNS Disorders. 2018 Apr 5 20(2):17l02190. PMID 29659212.
