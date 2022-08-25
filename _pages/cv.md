@@ -34,7 +34,25 @@ redirect_from:
 
 | Years | Title | Specialty/Discipline (Primary mentor/PI, if relevant) | Institution |
 | --- | --- | --- | --- |
-| 2015 – 2016 | Postdoctoral Fellow | Howard Hughes Medical Institute and Laboratory of Sensory Neuroscience, PI James Hudspeth | The Rockefeller University |
+| 2015 – 2016 | Postdoctoral Fellowship | Howard Hughes Medical Institute and Laboratory of Sensory Neuroscience, PI James Hudspeth | The Rockefeller University |
+| 2018 – 2019 | Internship | Department of Medicine | Massachusetts General Hospital |
+| 2018 – 2022 | Residency | Department of Psychiatry | Massachusetts General Hospital and McLean Hospital |
+
+
+
+## Faculty Appointments
+
+| Years | Title | Specialty/Discipline (Primary mentor/PI, if relevant) | Institution |
+| --- | --- | --- | --- |
+| 2022 –  | Member of the Faculty | Department of Psychiatry | Harvard Medical School |
+
+
+
+## Appointments at Hospitals/Affiliated Institutions
+
+| Years | Title | Specialty/Discipline (Primary mentor/PI, if relevant) | Institution |
+| --- | --- | --- | --- |
+| 2018 – 2019 | Psychiatrist | Department of Psychiatry | Massachusetts General Hospital |
 
 
 
@@ -43,7 +61,8 @@ redirect_from:
 | Month/Year(s) | Position Title | Department | Institution |
 | --- | --- | --- | --- |
 | 2018 – 2019 | Internship | Department of Medicine | Massachusetts General Hospital |
-| 2018 – | Resident Physician | Department of Psychiatry | Massachusetts General Hospital and McLean Hospital |
+| 2018 – 2022 | Resident Physician | Department of Psychiatry | Massachusetts General Hospital and McLean Hospital |
+
 
 
 ## Research Positions
@@ -73,8 +92,12 @@ redirect_from:
 
 | Year(s) | Position Title | Institution (note if specific department) |
 | --- | --- | --- |
-| 2009 – 2011 | Board Member and Insurance ChairWeill Cornell Community Clinic | Weill Cornell Medical College |
-| 2011 – 2013 | Executive DirectorWeill Cornell Community Clinic | Weill Cornell Medical College |
+| 2009 – 2011 | Board Member and Insurance Chair, Weill Cornell Community Clinic | Weill Cornell Medical College |
+| 2011 – 2013 | Executive Director, Weill Cornell Community Clinic | Weill Cornell Medical College |
+| 2021 – 2022 | Chief Resident, Outpatient Psychiatry Division | Massachusetts General Hospital |
+| 2022 –  | Associate Director, Psychiatric Studies, Translational Research Center | Massachusetts General Hospital |
+| 2022 –  | Associate Program Director, MGH/McLean Adult Psychiatry Residency Program | Massachusetts General Hospital |
+| 2022 –  | Associate Program Director, Physician Scientist Training Program (PSTP) | Massachusetts General Hospital |
 
 
 **National**
@@ -92,7 +115,7 @@ redirect_from:
 | Year(s) | Name of Committee | Institution/Organization |
 | --- | --- | --- |
  | Dates of Role(s) | Title of Role(s) |
-| 2018 – | Curriculum Committee | Massachusetts General Hospital and McLean Hospital |
+| 2018 – 2020 | Curriculum Committee | Massachusetts General Hospital and McLean Hospital |
 
 
 
