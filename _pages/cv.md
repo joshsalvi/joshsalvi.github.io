@@ -44,8 +44,8 @@ redirect_from:
 
 | Years | Title | Specialty/Discipline (Primary mentor/PI, if relevant) | Institution |
 | --- | --- | --- | --- |
-| 2022 –  | Member of the Faculty | Department of Psychiatry | Harvard Medical School |
-
+| 2022 –  | Instructor | Department of Psychiatry | Harvard Medical School |
+| 2024 –  | Adjunct Faculty | MGH Institute of Health Professions | Massachusetts General Hospital |
 
 
 ## Appointments at Hospitals/Affiliated Institutions
@@ -98,6 +98,7 @@ redirect_from:
 | 2022 –  | Associate Director, Psychiatric Studies, Translational Research Center | Massachusetts General Hospital |
 | 2022 –  | Associate Program Director, MGH/McLean Adult Psychiatry Residency Program | Massachusetts General Hospital |
 | 2022 –  | Associate Program Director, Physician Scientist Training Program (PSTP) | Massachusetts General Hospital |
+| 2023 –  | Assistant Medical Director, Center for OCD and Related Disorders | Massachusetts General Hospital |
 
 
 **National**
@@ -116,6 +117,7 @@ redirect_from:
 | --- | --- | --- |
  | Dates of Role(s) | Title of Role(s) |
 | 2018 – 2020 | Curriculum Committee | Massachusetts General Hospital and McLean Hospital |
+| 2024 – | Education Task Force, Mass General Brigham Psychiatry Academic Medical Centers | Mass General Brigham |
 
 
 
@@ -143,6 +145,7 @@ redirect_from:
 
 | Year | Name of Honor/Prize | Awarding Organization | Achievement for which awarded (if unclear from award title) |
 | --- | --- | --- | --- |
+| 2022 | David Dybdal Award | MGH/McLean | Awarded to the resident who captures the spirit of the residency program |
 | 2021 | The Pamela Sklar Psychiatric Genetics and Neuroscience Fellowship | Broad Institute | Research award |
 | 2020 | NIMH Ourstanding Resident Award (ORAP) | National Institute of Mental Health | Award for psychiatry residents with outstanding research and academic potential |
 | 2020 | APA Leadership Fellowship | American Psychiatric Association | Fellowship for leadership in psychiatry |
