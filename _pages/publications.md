@@ -16,7 +16,11 @@ author_profile: true
 
 
 [✧] **First author**, [✶] **Senior/Corresponding author**
-
+*   [✶] Araujo Coelho D, Yang C, Suriaga A, Manasa J, Bain P, Vieira W, Papatheodorou S, **Salvi JD**. Efficacy of glutamatergic medications for obsessive-compulsive and related disorders: A systematic review and meta-analysis. JAMA Network Open. 2025;8(1):e2452973; doi:10.1001/jamanetworkopen.2024.52963. 
+*  Araujo Coelho D, **Salvi JD**, Viera W, Cassano P. Inflammation in obsessive-compulsive disorder: A literature review and hypothesis-based potential of transcranial photobiomodulation. Journal of Neuroscience Research. 2024; 102(3):e25317.
+*  Yip A, Layfield S, Duff L, Wong S, Chen J, Osman A, Rodriguez-Villa F, Gelda S, Gelwan E, Beauchamp P, Eichi HR, **Salvi JD**, Baker JT, Busch A, Eisen J, Ressler K. Deep phenotyping in routine inpatient psychiatric care: Methods, feasibility, early results, potential applications. Neuropsychopharmacology. 2022; 47:255-256.
+*  Layfield S, Wong SA, Duffy LA, Beauchamp P, Eichi HR, **Salvi JD**D, Baker J, Ressler KJ, Yip A. The relationship between sleep disturbance and suicidal thoughts on inpatient psychiatric units. Biological Psychiatry. 2022; 91(9): S201-S201.
+*  Duffy L, Wong S, Layfield S, Beauchamp P, Eichi HR, **Salvi JD**D, Baker J, Ressler KJ, Yip A. Precision psychiatry on adult inpatient psychiatric units: Utilizing patient reported measures and actigraphy data to characterize patient symptomology and outcomes. Biological Psychiatry. 2022; 91(9):S201-S202.
 *  [✧] **Salvi J**. Calculated Decisions: Columbia-Suicide Severity Rating Scale (C-SSRS). Emerg Med Pract. 2019 May 1 21(5):CD3-4. PMID 31039299.
 *  [✧] **Salvi JD** , Iqbal M, Kotbi N, and Francois D. Successful use of electroconvulsive therapy in the setting of lattice degeneration of the retina. Primary Care Companion for CNS Disorders. 2018 Apr 5 20(2):17l02190. PMID 29659212.
 *   Milewski AR, O'Maoileidigh D, **Salvi JD** , and Hudspeth AJ. Homeostatic enhancement of sensory transduction. Proceedings of the National Academy of Sciences of the United States of America. 2017 Aug 15 114(33):E6794-E6803. doi: 10.1073/pnas.1706242114. PMID 28760949. PMCID 5565450.
@@ -38,7 +42,7 @@ author_profile: true
 [✧] **First author**, [✶] **Senior/Corresponding author**
 
 * [✶] McDowell MJ and **Salvi JD**. Casting Light from the Shadows: Coping and Defenses Amidst a Pandemic. J Clin Psychiatry. 2020 Jun; 81(4):20com13468. PMID 32558400.
-
+* [✶] **Salvi JD**, Rauch SR, Baker JT. Behavior as physiology: How dynamical-systems theory could help psychiatry. American Journal of Psychiatry. 2021;(9): 791-792. doi: 10.1176/appi.ajp.2020.20081151. PMID 34516231. 
 
 
 ### Proceedings of meetings or other non-peer reviewed scholarship
