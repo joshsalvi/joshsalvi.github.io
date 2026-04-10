@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSTP Alumni Outcomes — Charts</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root {
+  --bg: #f8f7f4;
+  --surface: #ffffff;
+  --border: rgba(0,0,0,0.1);
+  --text: #1a1a18;
+  --muted: #6b6a65;
+  --blue1: #185FA5; --blue2: #378ADD; --blue3: #85B7EB; --blue4: #B5D4F4;
+  --teal1: #0F6E56; --teal2: #1D9E75; --teal3: #5DCAA5;
+  --purple1: #3C3489; --purple2: #534AB7; --purple3: #7F77DD; --purple4: #AFA9EC;
+  --coral1: #993C1D; --coral2: #D85A30; --coral3: #F0997B;
+  --gray1: #5F5E5A; --gray2: #888780; --gray3: #D3D1C7;
+  --amber1: #BA7517; --amber2: #EF9F27;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; padding: 2rem; }
+h1 { font-size: 22px; font-weight: 400; letter-spacing: -0.5px; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: var(--muted); font-family: 'Helvetica Neue', sans-serif; margin-bottom: 2rem; }
+.section-label { font-size: 11px; font-family: 'Helvetica Neue', sans-serif; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; margin-top: 2rem; padding-bottom: 6px; border-bottom: 0.5px solid var(--border); }
+.card { background: var(--surface); border: 0.5px solid var(--border); border-radius: 10px; padding: 1.25rem; }
+.card-title { font-family: 'Helvetica Neue', sans-serif; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+.card-sub { font-family: 'Helvetica Neue', sans-serif; font-size: 11px; color: var(--muted); margin-bottom: 1rem; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+.grid3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 14px; }
+.grid4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 1.5rem; }
+.metric { background: var(--surface); border: 0.5px solid var(--border); border-radius: 10px; padding: 1.1rem; text-align: center; }
+.metric-label { font-size: 11px; font-family: 'Helvetica Neue', sans-serif; color: var(--muted); margin-bottom: 6px; }
+.metric-val { font-size: 30px; font-family: 'Helvetica Neue', sans-serif; font-weight: 300; letter-spacing: -1px; }
+.metric-note { font-size: 10px; color: var(--muted); font-family: 'Helvetica Neue', sans-serif; margin-top: 3px; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; font-size: 11px; font-family: 'Helvetica Neue', sans-serif; color: var(--muted); }
+.leg-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+canvas { display: block; }
+.chart-wrap { position: relative; width: 100%; }
+</style>
+</head>
+<body>
+<h1>MGH/McLean PSTP — Alumni Outcomes</h1>
+<p class="subtitle">REDCap export · March 30 2026 · Most recent survey per alumnus · N=59 total alumni</p>
+
+<div class="grid4">
+  <div class="metric"><div class="metric-label">Total alumni</div><div class="metric-val">59</div><div class="metric-note">Classes 2012–2025</div></div>
+  <div class="metric"><div class="metric-label">K award success rate</div><div class="metric-val" style="color:var(--blue1)">62.5%</div><div class="metric-note">10/16 who applied · ≫ NIH avg ~30%</div></div>
+  <div class="metric"><div class="metric-label">80–100% research effort</div><div class="metric-val" style="color:var(--teal1)">26%</div><div class="metric-note">11 of 42 with effort data</div></div>
+  <div class="metric"><div class="metric-label">Asst. Prof. or above</div><div class="metric-val" style="color:var(--purple2)">32%</div><div class="metric-note">14 of 44 with confirmed titles</div></div>
+</div>
+
+<p class="section-label">Career Development Awards</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">K award pipeline — all 59 alumni</div>
+    <div class="card-sub">Breakdown by outcome category</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="kPipeline"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">K awards by graduation cohort</div>
+    <div class="card-sub">Cohorts 2022–2025 too recent for K award applications</div>
+    <div class="legend">
+      <span><span class="leg-dot" style="background:var(--blue4)"></span> Cohort size</span>
+      <span><span class="leg-dot" style="background:var(--blue2)"></span> Applied</span>
+      <span><span class="leg-dot" style="background:var(--blue1)"></span> Received</span>
+    </div>
+    <div class="chart-wrap" style="height:190px"><canvas id="kCohort"></canvas></div>
+  </div>
+</div>
+
+<p class="section-label">Career Trajectories</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Long-term career goals</div>
+    <div class="card-sub">Most recent survey · N=42 with responses</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="goalDonut"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Research effort vs. salary support</div>
+    <div class="card-sub">% time and % salary devoted to research · N=42</div>
+    <div class="legend">
+      <span><span class="leg-dot" style="background:var(--blue2)"></span> Research effort (%time)</span>
+      <span><span class="leg-dot" style="background:var(--blue4)"></span> Research salary (%FTE)</span>
+    </div>
+    <div class="chart-wrap" style="height:190px"><canvas id="effortChart"></canvas></div>
+  </div>
+</div>
+
+<p class="section-label">Promotions and Appointments</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Academic rank at most recent survey</div>
+    <div class="card-sub">N=44 alumni with confirmed institutional appointments</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="rankChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Institutional affiliation type</div>
+    <div class="card-sub">Categorized from free-text responses · N=44</div>
+    <div class="chart-wrap" style="height:220px"><canvas id="instChart"></canvas></div>
+  </div>
+</div>
+
+<p class="section-label">Publications (Current Residents — Rates by PGY Year)</p>
+<div class="card" style="margin-bottom:14px">
+  <div class="card-title">% of survey instances reporting ≥1 manuscript submitted or published in past 12 months</div>
+  <div class="card-sub">All PGY1–4 current resident instances · Total instances per year: PGY1=50, PGY2=47, PGY3=49, PGY4=35</div>
+  <div class="chart-wrap" style="height:200px"><canvas id="pubRateChart"></canvas></div>
+</div>
+
+<p class="section-label">Awards (Current Residents)</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Award receipt rate by PGY year</div>
+    <div class="card-sub">% of instances reporting any research award in past 12 months</div>
+    <div class="chart-wrap" style="height:200px"><canvas id="awardRateChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Named competitive awards received during residency</div>
+    <div class="card-sub">Manually tallied from free-text · N=instances with specific awards</div>
+    <div class="chart-wrap" style="height:200px"><canvas id="namedAwardsChart"></canvas></div>
+  </div>
+</div>
+
+<script>
+const C = '#3d3d3a', G = 'rgba(0,0,0,0.07)', B = { responsive:true, maintainAspectRatio:false };
+
+new Chart(document.getElementById('kPipeline'), {
+  type:'bar', data:{
+    labels:['Never applied','Applied — unfunded','K23 received','K08 received','K99/R00 received','K12/Other received'],
+    datasets:[{data:[27,4,4,4,1,1],
+      backgroundColor:['#D3D1C7','#F0997B','#5DCAA5','#1D9E75','#0F6E56','#085041'],borderWidth:0}]
+  },
+  options:{...B, indexAxis:'y',
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x} alumni (${Math.round(c.parsed.x/59*100)}%)`}}},
+    scales:{x:{ticks:{color:C,font:{size:11}},grid:{color:G},max:32},y:{ticks:{color:C,font:{size:11}},grid:{display:false}}}
+  }
+});
+
+new Chart(document.getElementById('kCohort'), {
+  type:'bar', data:{
+    labels:['2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'],
+    datasets:[
+      {label:'Cohort N',data:[3,1,3,3,4,3,6,6,5,6,1,2,1,2],backgroundColor:'#B5D4F4',borderWidth:0},
+      {label:'Applied',data:[2,1,2,0,1,0,3,3,1,2,0,0,1,0],backgroundColor:'#378ADD',borderWidth:0},
+      {label:'Received',data:[1,1,2,0,1,0,1,3,1,0,0,0,0,0],backgroundColor:'#185FA5',borderWidth:0}
+    ]
+  },
+  options:{...B, plugins:{legend:{display:false}},
+    scales:{x:{ticks:{color:C,font:{size:11}},grid:{display:false}},y:{ticks:{color:C,font:{size:11},stepSize:2},grid:{color:G}}}
+  }
+});
+
+new Chart(document.getElementById('goalDonut'), {
+  type:'doughnut', data:{
+    labels:['Tenure-track, own lab','Own lab (collaborative)','Project-by-project','Consultation only','Undecided','Industry'],
+    datasets:[{data:[14,8,9,4,5,2],
+      backgroundColor:['#185FA5','#378ADD','#85B7EB','#B5D4F4','#D3D1C7','#888780'],
+      borderWidth:2,borderColor:'#fff'}]
+  },
+  options:{...B,
+    plugins:{legend:{position:'right',labels:{color:C,font:{size:11},boxWidth:12,padding:8}},
+    tooltip:{callbacks:{label:c=>` ${c.label}: ${c.parsed} (${Math.round(c.parsed/42*100)}%)`}}}
+  }
+});
+
+new Chart(document.getElementById('effortChart'), {
+  type:'bar', data:{
+    labels:['0–19%','20–39%','40–59%','60–79%','80–100%'],
+    datasets:[
+      {label:'Research effort (%time)',data:[15,5,6,5,11],backgroundColor:'#378ADD',borderWidth:0},
+      {label:'Research salary (%FTE)',data:[18,2,5,5,12],backgroundColor:'#B5D4F4',borderWidth:0}
+    ]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.y} alumni`}}},
+    scales:{x:{ticks:{color:C,font:{size:11}},grid:{display:false}},y:{ticks:{color:C,font:{size:11},stepSize:5},grid:{color:G}}}
+  }
+});
+
+new Chart(document.getElementById('rankChart'), {
+  type:'bar', data:{
+    labels:['Instructor (HMS/affiliate)','Asst. Professor','Assoc./Full Professor','Fellow / Postdoc','Other / non-academic'],
+    datasets:[{data:[20,12,2,2,8],
+      backgroundColor:['#AFA9EC','#7F77DD','#534AB7','#3C3489','#D3D1C7'],borderWidth:0}]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y} alumni (${Math.round(c.parsed.y/44*100)}%)`}}},
+    scales:{x:{ticks:{color:C,font:{size:11}},grid:{display:false}},y:{ticks:{color:C,font:{size:11}},grid:{color:G}}}
+  }
+});
+
+new Chart(document.getElementById('instChart'), {
+  type:'doughnut', data:{
+    labels:['Remained at MGH/McLean/HMS','Other Harvard-affiliated','Non-Harvard academic','Non-academic / other'],
+    datasets:[{data:[25,6,8,5],
+      backgroundColor:['#185FA5','#378ADD','#85B7EB','#D3D1C7'],
+      borderWidth:2,borderColor:'#fff'}]
+  },
+  options:{...B,
+    plugins:{legend:{position:'right',labels:{color:C,font:{size:11},boxWidth:12,padding:8}},
+    tooltip:{callbacks:{label:c=>` ${c.label}: ${c.parsed} (${Math.round(c.parsed/44*100)}%)`}}}
+  }
+});
+
+new Chart(document.getElementById('pubRateChart'), {
+  type:'bar', data:{
+    labels:['PGY1','PGY2','PGY3','PGY4'],
+    datasets:[{
+      label:'% with ≥1 publication',
+      data:[60,55,59,54],
+      backgroundColor:['#85B7EB','#378ADD','#185FA5','#0C447C'],
+      borderWidth:0
+    }]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y}% of instances`}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:12}},grid:{display:false}},
+      y:{ticks:{color:C,font:{size:11},callback:v=>v+'%'},grid:{color:G},min:0,max:80,
+         title:{display:true,text:'% of survey instances',color:C,font:{size:11}}}
+    }
+  }
+});
+
+new Chart(document.getElementById('awardRateChart'), {
+  type:'bar', data:{
+    labels:['PGY1','PGY2','PGY3','PGY4'],
+    datasets:[{
+      label:'% with any award',
+      data:[14,13,41,46],
+      backgroundColor:['#9FE1CB','#5DCAA5','#1D9E75','#0F6E56'],
+      borderWidth:0
+    }]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y}% of instances`}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:12}},grid:{display:false}},
+      y:{ticks:{color:C,font:{size:11},callback:v=>v+'%'},grid:{color:G},min:0,max:60,
+         title:{display:true,text:'% of survey instances',color:C,font:{size:11}}}
+    }
+  }
+});
+
+new Chart(document.getElementById('namedAwardsChart'), {
+  type:'bar', data:{
+    labels:['NIMH Outstanding\nResident Award','NIMH ORAP','Dupont-Warren\nFellowship','Stanley Center\nAward/Fellowship','APA Research\nColloquium','Pamela Sklar\nFellowship','AACAP Pilot\nResearch Award','Other grants\n& awards'],
+    datasets:[
+      {label:'PGY1',data:[0,0,0,0,0,0,0,1],backgroundColor:'#E6F1FB',borderWidth:0},
+      {label:'PGY2',data:[1,0,0,0,0,0,0,2],backgroundColor:'#85B7EB',borderWidth:0},
+      {label:'PGY3',data:[4,2,0,0,1,1,1,3],backgroundColor:'#378ADD',borderWidth:0},
+      {label:'PGY4',data:[1,0,3,2,2,1,0,4],backgroundColor:'#185FA5',borderWidth:0}
+    ]
+  },
+  options:{...B,
+    plugins:{legend:{labels:{color:C,font:{size:11},boxWidth:10,padding:6}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:9}},grid:{display:false},stacked:true},
+      y:{ticks:{color:C,font:{size:11},stepSize:2},grid:{color:G},stacked:true}
+    }
+  }
+});
+</script>
+</body>
+</html>

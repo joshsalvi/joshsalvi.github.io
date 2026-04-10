@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSTP Self-Assessment Trends — Charts</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root {
+  --bg: #f8f7f4; --surface: #ffffff; --border: rgba(0,0,0,0.1);
+  --text: #1a1a18; --muted: #6b6a65;
+  --blue1:#185FA5;--blue2:#378ADD;--blue3:#85B7EB;--blue4:#B5D4F4;
+  --teal1:#0F6E56;--teal2:#1D9E75;--teal3:#5DCAA5;--teal4:#9FE1CB;
+  --purple1:#3C3489;--purple2:#534AB7;--purple3:#7F77DD;--purple4:#AFA9EC;
+  --coral1:#993C1D;--coral2:#D85A30;--coral3:#F0997B;
+  --amber1:#854F0B;--amber2:#BA7517;--amber3:#EF9F27;
+  --gray1:#5F5E5A;--gray2:#888780;--gray3:#D3D1C7;
+  --sig: #1D9E75; --nonsig: #D3D1C7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Georgia',serif;padding:2rem}
+h1{font-size:22px;font-weight:400;letter-spacing:-0.5px;margin-bottom:4px}
+.subtitle{font-size:13px;color:var(--muted);font-family:'Helvetica Neue',sans-serif;margin-bottom:2rem}
+.section-label{font-size:11px;font-family:'Helvetica Neue',sans-serif;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;margin-top:2rem;padding-bottom:6px;border-bottom:0.5px solid var(--border)}
+.card{background:var(--surface);border:0.5px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:14px}
+.card-title{font-family:'Helvetica Neue',sans-serif;font-size:13px;font-weight:500;margin-bottom:3px}
+.card-sub{font-family:'Helvetica Neue',sans-serif;font-size:11px;color:var(--muted);margin-bottom:1rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:10px;font-size:11px;font-family:'Helvetica Neue',sans-serif;color:var(--muted)}
+.leg-dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+.stat-note{font-size:10px;font-family:'Helvetica Neue',sans-serif;color:var(--muted);margin-top:6px;font-style:italic}
+.forest-row{display:flex;align-items:center;margin-bottom:5px;font-size:11px;font-family:'Helvetica Neue',sans-serif}
+.forest-label{width:210px;flex-shrink:0;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.forest-bar-wrap{flex:1;position:relative;height:16px}
+.forest-zero{position:absolute;left:50%;top:0;width:1px;height:100%;background:var(--border);z-index:1}
+.forest-bar{position:absolute;height:10px;top:3px;border-radius:2px}
+.forest-ci{position:absolute;height:2px;top:7px;background:var(--gray2)}
+.forest-p{width:50px;text-align:right;flex-shrink:0;color:var(--muted)}
+.sig-mark{color:var(--sig);font-weight:600}
+</style>
+</head>
+<body>
+<h1>MGH/McLean PSTP — Self-Assessment Trends</h1>
+<p class="subtitle">REDCap export · March 30 2026 · N=26 residents with SA data (52 instances) · PGY1–4 · 1=very unconfident, 5=very confident</p>
+
+<p class="section-label">Domain Scores by PGY Year (Cross-Sectional, Mean ± SEM)</p>
+<div class="card">
+  <div class="card-title">All seven competency domains — cross-sectional means by training year</div>
+  <div class="card-sub">PGY1: n=11 · PGY2: n=16 · PGY3: n=15 · PGY4: n=10. Spearman r and p-value shown for linear trend. Shaded bands = ±SEM.</div>
+  <div class="legend">
+    <span><span class="leg-dot" style="background:#185FA5"></span>Scientific Knowledge (r=+0.17)</span>
+    <span><span class="leg-dot" style="background:#1D9E75"></span>Systems-Based Practice* (r=+0.35, p=.011)</span>
+    <span><span class="leg-dot" style="background:#7F77DD"></span>Practice-Based Learning (r=+0.05)</span>
+    <span><span class="leg-dot" style="background:#EF9F27"></span>Professionalism (r=+0.01)</span>
+    <span><span class="leg-dot" style="background:#D85A30"></span>Communication (r=+0.19)</span>
+    <span><span class="leg-dot" style="background:#E24B4A"></span>Funding** (r=+0.39, p=.005)</span>
+    <span><span class="leg-dot" style="background:#888780"></span>DEI (r=+0.03)</span>
+  </div>
+  <div style="position:relative;height:320px"><canvas id="domainLine"></canvas></div>
+  <p class="stat-note">* p=.011 · ** p=.005 · Significance based on Spearman rank correlation across all instances</p>
+</div>
+
+<p class="section-label">Grant Writing Competencies — The Growth Domain</p>
+<div class="card">
+  <div class="card-title">Six grant writing items — cross-sectional means by PGY year</div>
+  <div class="card-sub">All six items show significant positive trends (Spearman r range +0.27 to +0.44). Dotted line at 4.0 = "somewhat confident" threshold.</div>
+  <div class="legend">
+    <span><span class="leg-dot" style="background:#185FA5"></span>Find funding sources (r=+0.39, p=.004)</span>
+    <span><span class="leg-dot" style="background:#378ADD"></span>NIH Biosketch (r=+0.44, p=.001)</span>
+    <span><span class="leg-dot" style="background:#7F77DD"></span>Specific Aims (r=+0.34, p=.013)</span>
+    <span><span class="leg-dot" style="background:#1D9E75"></span>Research Plan (r=+0.27, p=.052)</span>
+    <span><span class="leg-dot" style="background:#EF9F27"></span>Career Dev. section (r=+0.33, p=.017)</span>
+    <span><span class="leg-dot" style="background:#D85A30"></span>Compelling story (r=+0.28, p=.048)</span>
+  </div>
+  <div style="position:relative;height:280px"><canvas id="grantLine"></canvas></div>
+</div>
+
+<p class="section-label">Selected Individual Items — Cross-Sectional Trends</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Physician-scientist career knowledge</div>
+    <div class="card-sub">Strongest cross-sectional trend · r=+0.48, p&lt;.001</div>
+    <div style="position:relative;height:200px"><canvas id="careerKnowledge"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Authorship and resource negotiation</div>
+    <div class="card-sub">Notable PGY1→PGY2 jump · r=+0.31, p=.028</div>
+    <div style="position:relative;height:200px"><canvas id="authorshipChart"></canvas></div>
+  </div>
+</div>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Chronically low: time management</div>
+    <div class="card-sub">Lowest professionalism item · r=+0.08, p=.572 · No improvement</div>
+    <div style="position:relative;height:200px"><canvas id="timeChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Personal wellbeing</div>
+    <div class="card-sub">Declining trend by PGY4 · r=−0.13, p=.362</div>
+    <div style="position:relative;height:200px"><canvas id="wellbeingChart"></canvas></div>
+  </div>
+</div>
+
+<p class="section-label">Within-Resident Longitudinal Change (N=15 residents with ≥2 time points)</p>
+<div class="card">
+  <div class="card-title">Mean change from first to last observation — individual items</div>
+  <div class="card-sub">One-sample t-test vs. 0. Green = p&lt;.05, gray = not significant. Error bars = ±SEM. Scale: −2 to +2.</div>
+
+  <div style="margin-bottom:8px;display:flex;font-size:10px;font-family:'Helvetica Neue',sans-serif;color:var(--muted)">
+    <div style="width:210px">Item</div>
+    <div style="flex:1;text-align:center">← Decrease &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Increase →</div>
+    <div style="width:50px;text-align:right">p-value</div>
+  </div>
+
+  <div id="forestPlot"></div>
+</div>
+
+<p class="section-label">Within-Resident Domain Change</p>
+<div class="card">
+  <div class="card-title">Domain score change from first to last observation (N=15)</div>
+  <div class="card-sub">One-sample t-test vs. 0. All domains show positive change; Funding and Systems-Based Practice reach significance.</div>
+  <div style="position:relative;height:220px"><canvas id="domainChangeChart"></canvas></div>
+</div>
+
+<p class="section-label">Mentor Satisfaction Distribution</p>
+<div class="grid2">
+  <div class="card">
+    <div class="card-title">Mentor satisfaction histogram (0–100 scale)</div>
+    <div class="card-sub">All current resident instances with satisfaction data · N=118 · Mean=87.6, Median=91.0</div>
+    <div style="position:relative;height:200px"><canvas id="satHistChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Primary mentor establishment and meeting frequency by PGY year</div>
+    <div class="card-sub">% with primary mentor (bars) · Meeting frequency ordinal mean (line, right axis)</div>
+    <div style="position:relative;height:200px"><canvas id="mentorChart"></canvas></div>
+  </div>
+</div>
+
+<script>
+const C='#3d3d3a', G='rgba(0,0,0,0.07)', B={responsive:true,maintainAspectRatio:false};
+const YRS=['PGY1','PGY2','PGY3','PGY4'];
+
+new Chart(document.getElementById('domainLine'),{
+  type:'line',
+  data:{labels:YRS,datasets:[
+    {label:'Scientific Knowledge',data:[3.909,4.118,4.170,4.189],borderColor:'#185FA5',backgroundColor:'rgba(24,95,165,0.08)',fill:true,tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Systems-Based Practice',data:[3.273,3.396,4.044,3.967],borderColor:'#1D9E75',backgroundColor:'rgba(29,158,117,0.08)',fill:true,tension:0.3,pointRadius:5,borderWidth:2.5},
+    {label:'Practice-Based Learning',data:[3.879,4.208,4.178,4.033],borderColor:'#7F77DD',backgroundColor:'rgba(127,119,221,0.06)',fill:true,tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Professionalism',data:[3.841,3.906,3.950,3.900],borderColor:'#EF9F27',borderDash:[4,3],backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Interpersonal/Communication',data:[3.618,4.013,4.053,4.080],borderColor:'#D85A30',backgroundColor:'rgba(216,90,48,0.06)',fill:true,tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Funding',data:[2.500,3.448,3.444,3.867],borderColor:'#E24B4A',backgroundColor:'rgba(226,75,74,0.08)',fill:true,tension:0.3,pointRadius:6,borderWidth:3},
+    {label:'DEI',data:[4.364,4.292,4.444,4.367],borderColor:'#888780',borderDash:[2,2],backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:1.5}
+  ]},
+  options:{...B,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:{color:C,font:{size:12}},grid:{color:G}},
+      y:{min:2.0,max:5.0,ticks:{color:C,font:{size:11},stepSize:0.5},grid:{color:G},
+         title:{display:true,text:'Mean self-assessment (1–5)',color:C,font:{size:11}}}
+    }
+  }
+});
+
+new Chart(document.getElementById('grantLine'),{
+  type:'line',
+  data:{labels:YRS,datasets:[
+    {label:'Find funding',data:[2.545,3.375,3.667,3.900],borderColor:'#185FA5',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'NIH Biosketch',data:[2.273,3.188,3.333,4.100],borderColor:'#378ADD',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2.5},
+    {label:'Specific Aims',data:[2.818,3.625,3.533,4.100],borderColor:'#7F77DD',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Research Plan',data:[2.636,3.562,3.467,3.800],borderColor:'#1D9E75',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Career Dev section',data:[2.273,3.188,3.133,3.600],borderColor:'#EF9F27',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2},
+    {label:'Compelling story',data:[2.455,3.750,3.533,3.700],borderColor:'#D85A30',backgroundColor:'transparent',tension:0.3,pointRadius:5,borderWidth:2}
+  ]},
+  options:{...B,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{ticks:{color:C,font:{size:12}},grid:{color:G}},
+      y:{min:1.5,max:4.5,ticks:{color:C,font:{size:11},stepSize:0.5},grid:{color:G},
+         title:{display:true,text:'Mean self-assessment (1–5)',color:C,font:{size:11}}}
+    }
+  }
+});
+
+function makeItemChart(id,data,color){
+  new Chart(document.getElementById(id),{type:'line',
+    data:{labels:YRS,datasets:[{data,borderColor:color,backgroundColor:color.replace(')',',0.1)').replace('rgb','rgba'),fill:true,tension:0.3,pointRadius:6,borderWidth:2.5}]},
+    options:{...B,plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:C,font:{size:12}},grid:{color:G}},
+        y:{min:1,max:5,ticks:{color:C,font:{size:11}},grid:{color:G},
+           title:{display:true,text:'Mean (1–5)',color:C,font:{size:10}}}}}
+  });
+}
+makeItemChart('careerKnowledge',[2.818,3.438,4.000,4.000],'#185FA5');
+makeItemChart('authorshipChart',[3.000,4.063,4.067,4.000],'#7F77DD');
+makeItemChart('timeChart',[3.364,3.438,3.533,3.600],'#D85A30');
+makeItemChart('wellbeingChart',[4.182,4.000,4.067,3.800],'#888780');
+
+const forestData = [
+  {label:'NIH Biosketch', delta:1.333, sem:0.278, p:0.0004, sig:true},
+  {label:'Find funding sources', delta:1.200, sem:0.301, p:0.0018, sig:true},
+  {label:'Specific Aims', delta:1.067, sem:0.258, p:0.0013, sig:true},
+  {label:'Research Plan', delta:1.000, sem:0.249, p:0.0017, sig:true},
+  {label:'Career Dev. section', delta:1.000, sem:0.340, p:0.0131, sig:true},
+  {label:'Identify career knowledge', delta:0.933, sem:0.274, p:0.0054, sig:true},
+  {label:'Authorship negotiation', delta:0.733, sem:0.258, p:0.0156, sig:true},
+  {label:'Compelling story', delta:0.733, sem:0.333, p:0.0516, sig:false},
+  {label:'Understand own role', delta:0.467, sem:0.129, p:0.0035, sig:true},
+  {label:'Advocate for equality', delta:0.600, sem:0.280, p:0.0572, sig:false},
+  {label:'Feedback to mentors', delta:0.467, sem:0.247, p:0.0894, sig:false},
+  {label:'Compare methodologies', delta:0.467, sem:0.247, p:0.0894, sig:false},
+  {label:'Safety event reporting', delta:0.467, sem:0.420, p:0.3015, sig:false},
+  {label:'Time management', delta:0.533, sem:0.296, p:0.1038, sig:false},
+  {label:'Integrate feedback', delta:0.400, sem:0.263, p:0.1643, sig:false},
+  {label:'Document progress', delta:0.333, sem:0.181, p:0.0961, sig:false},
+  {label:'Feedback to colleagues', delta:0.333, sem:0.181, p:0.0961, sig:false},
+  {label:'Analyze perf. gaps', delta:0.333, sem:0.224, p:0.1733, sig:false},
+  {label:'Timely task completion', delta:0.133, sem:0.160, p:0.4332, sig:false},
+  {label:'Cultural competence', delta:0.200, sem:0.169, p:0.2711, sig:false},
+  {label:'Global competence', delta:0.267, sem:0.199, p:0.2170, sig:false},
+  {label:'Personal wellbeing', delta:0.067, sem:0.176, p:0.7192, sig:false},
+  {label:'Behavioral change', delta:0.000, sem:0.211, p:1.0000, sig:false},
+  {label:'Poster presentation', delta:0.000, sem:0.133, p:1.0000, sig:false},
+  {label:'Explain stats (impl.)', delta:0.067, sem:0.199, p:0.7513, sig:false},
+  {label:'Explain stats (explain)', delta:-0.067, sem:0.199, p:0.7513, sig:false},
+  {label:'Prepare manuscript', delta:-0.067, sem:0.220, p:0.7744, sig:false},
+];
+
+const fp=document.getElementById('forestPlot');
+const maxDelta=1.6;
+forestData.forEach(d=>{
+  const pct = (d.delta/maxDelta)*50;
+  const ciW = (d.sem*1.96/maxDelta)*50;
+  const left = 50+pct-ciW/2;
+  const barLeft = d.delta>=0?50:50+pct;
+  const barW = Math.abs(pct);
+  const col = d.sig?'#1D9E75':'#B4B2A9';
+  const pFmt = d.p<0.001?'<.001':d.p.toFixed(3);
+  const row=document.createElement('div');
+  row.className='forest-row';
+  row.innerHTML=`
+    <div class="forest-label" title="${d.label}">${d.label}</div>
+    <div class="forest-bar-wrap">
+      <div class="forest-zero"></div>
+      <div class="forest-ci" style="left:${left}%;width:${ciW}%;background:${col};opacity:0.5"></div>
+      <div class="forest-bar" style="left:${barLeft}%;width:${Math.max(barW,0.5)}%;background:${col}"></div>
+    </div>
+    <div class="forest-p ${d.sig?'sig-mark':''}">${pFmt}</div>`;
+  fp.appendChild(row);
+});
+
+new Chart(document.getElementById('domainChangeChart'),{
+  type:'bar',
+  data:{
+    labels:['Funding ***','Systems-Based\nPractice *','Communication *','Professionalism\n(p=.054)','Practice-Based\nLearning','DEI','Scientific\nKnowledge'],
+    datasets:[{
+      data:[1.056,0.667,0.413,0.300,0.244,0.200,0.185],
+      backgroundColor:['#1D9E75','#1D9E75','#1D9E75','#B4B2A9','#B4B2A9','#B4B2A9','#B4B2A9'],
+      borderWidth:0,
+      errorBars:{Funding:0.212,'Systems-Based\nPractice':0.278,'Communication':0.172,'Professionalism\n(p=.054)':0.138,'Practice-Based\nLearning':0.207,DEI:0.177,'Scientific\nKnowledge':0.167}
+    }]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` Δ = +${c.parsed.y.toFixed(3)} (n=15)`}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:11}},grid:{display:false}},
+      y:{min:0,max:1.3,ticks:{color:C,font:{size:11}},grid:{color:G},
+         title:{display:true,text:'Mean within-resident change (Δ)',color:C,font:{size:11}}}
+    }
+  }
+});
+
+new Chart(document.getElementById('satHistChart'),{
+  type:'bar',
+  data:{
+    labels:['<50','50–59','60–69','70–79','80–89','90–100'],
+    datasets:[{data:[1,7,3,16,19,72],
+      backgroundColor:['#F7C1C1','#F0997B','#FAC775','#85B7EB','#378ADD','#185FA5'],borderWidth:0}]
+  },
+  options:{...B,
+    plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.y} instances (${Math.round(c.parsed.y/118*100)}%)`}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:11}},grid:{display:false},
+         title:{display:true,text:'Satisfaction score (0–100)',color:C,font:{size:11}}},
+      y:{ticks:{color:C,font:{size:11}},grid:{color:G},
+         title:{display:true,text:'N instances',color:C,font:{size:11}}}
+    }
+  }
+});
+
+new Chart(document.getElementById('mentorChart'),{
+  type:'bar',
+  data:{
+    labels:['PGY1','PGY2','PGY3','PGY4'],
+    datasets:[
+      {type:'bar',label:'% with primary mentor',data:[34.1,74.4,97.7,90.9],
+        backgroundColor:['#B5D4F4','#85B7EB','#378ADD','#185FA5'],borderWidth:0,yAxisID:'y'},
+      {type:'line',label:'Meeting freq. (ordinal)',data:[1.71,2.13,2.63,3.03],
+        borderColor:'#EF9F27',pointBackgroundColor:'#EF9F27',borderWidth:2.5,tension:0.3,pointRadius:5,yAxisID:'y2'}
+    ]
+  },
+  options:{...B,
+    plugins:{legend:{labels:{color:C,font:{size:10},boxWidth:10,padding:8}}},
+    scales:{
+      x:{ticks:{color:C,font:{size:12}},grid:{display:false}},
+      y:{min:0,max:110,ticks:{color:C,font:{size:11},callback:v=>v+'%'},grid:{color:G},
+         title:{display:true,text:'% with primary mentor',color:C,font:{size:10}}},
+      y2:{position:'right',min:1,max:5,ticks:{color:'#EF9F27',font:{size:11}},grid:{display:false},
+          title:{display:true,text:'Meeting freq. (1–5)',color:'#EF9F27',font:{size:10}}}
+    }
+  }
+});
+</script>
+</body>
+</html>
